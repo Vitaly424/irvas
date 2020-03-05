@@ -1,0 +1,1 @@
+//= jquery.fancybox.js

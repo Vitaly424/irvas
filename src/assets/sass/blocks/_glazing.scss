@@ -1,0 +1,266 @@
+.glazing__colums{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -47px;
+    margin-right: -47px;
+    margin-top: 80px;
+    
+}
+
+.glazing__col{
+    flex-basis: 20%;
+    padding-left: 47.5px;
+    padding-right: 47.5px;
+ 
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.glazing__col-link{
+    display: block;
+    margin-top: 20px;
+
+    color: $blue-two;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: underline;
+
+    transition: color .2s linear;
+
+    &:hover{
+        color: $green;
+    }
+}
+
+.glazing__items{
+    margin-top: 40px;
+
+    display: flex;
+   
+}
+
+.glazing__item{
+    position: relative;
+
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    flex-basis: 50%;
+
+    border-radius: 5px 0 0 5px;
+    
+    &:nth-child(1){
+        background-image: linear-gradient(to bottom, $blue-three  0%, rgba($blue-three, .1) 1%, rgba($white, 0) 100%);
+
+        &::before{
+            border-top: 10px solid  $blue-three;
+        }
+    }
+
+    &:nth-child(2){
+        background-image: linear-gradient(to bottom,  $orange 0%, rgba($orange, 0.1) 1%, rgba($white, 0) 100%);
+
+        &::before{
+            border-top: 10px solid  $orange;
+        }
+    }
+    
+    &::before{
+        content: "";
+        position: absolute; 
+        left: 20px; bottom: -20px; 
+        top: 5px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        border: 10px solid transparent;
+        border-top: 10px solid  $blue-three;
+    }
+
+    img{
+        max-width: 100%;
+    }
+}
+
+.glazing__item-title{
+    margin-bottom: 25px;
+
+    text-align: center;
+    color: $blue;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.glazing__item-title--orange{
+    color: $orange;
+}
+
+.glazing__item-img{
+    margin-bottom: 40px;
+}
+
+.glazing__item-paragraph{
+    margin-bottom: 12px;
+
+    position: relative;
+
+    padding-left: 45px;
+
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;;
+
+    img{
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+}
+
+.glazing__price{
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glazing__price-left-number{
+    margin-bottom: 10px;
+
+    color: $black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+ 
+.glazing__price-left-text{
+    color: $black;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ 
+.glazing__btn{
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    font-size: 19px;
+}
+
+
+
+@media(max-width: 1216px){
+
+    .glazing__items{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .glazing__item{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 40px;
+
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1205px){
+
+    .glazing__col{
+        flex-basis: 33%;
+    }
+
+    .glazing__colums{
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+
+    .glazing__colums{
+        margin-top: 20px;
+    }
+
+    .glazing__price-left{
+        margin-right: 40px;
+
+
+    }
+ 
+}
+
+@media (max-width: 794px){
+
+
+    .glazing__colums{
+        justify-content: space-between;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .glazing__col{
+        flex-basis: 45%;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+     
+
+}
+ 
+@media (max-width: 610px){
+  
+
+    .glazing__item-img{
+        margin-bottom: 20px;
+    }
+
+    .glazing__price{
+        margin-top: 14px;
+         
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .glazing__price-left{
+        margin-right: 0;
+        margin-bottom: 20px;
+
+    }
+}
+
+@media (max-width: 425px){
+
+    .glazing__colums{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .glazing__col{
+        flex-basis: 100%;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+
+}
+ 

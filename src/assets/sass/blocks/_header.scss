@@ -1,0 +1,153 @@
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+}
+
+.header__center{
+    display: flex;
+    align-items: center;
+}
+
+.header__left-text{
+    margin-left: 25px;
+    max-width: 221px;
+
+    color: $blue;
+    font-size: 14px;
+}
+
+.header__center-substitute{
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 170px;
+    height: 60px;
+
+    border-radius: 10px;
+    border: 2px solid $green;
+
+    position: relative;
+
+    img{
+        position: absolute;
+        left: 13px;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+}
+
+.header__center-time{
+    position: relative;
+    
+    padding-left: 50px;
+
+    img{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+  
+}
+
+.header__center-text{
+    color: $gray;
+}   
+
+.header__center-number{
+    margin-top: 5px;
+
+    color: $gray;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header__right-phone-link{
+    color: $gray;
+    font-size: 23px;
+    font-weight: 700;
+
+    transition: color .2s linear;
+
+    &:hover{
+        color: $green;
+    }
+}
+
+.header__right-link{
+    padding-left: 27px;
+
+    color: $blue;
+    font-size: 15px;
+    text-decoration: underline;
+
+    transition: color .2s linear;
+
+    &:hover{
+        color: $green;
+    }
+}
+
+
+@media (max-width: 1205px){
+
+    .header__left-text{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1013px){
+
+    .header__center-substitute{
+        display: none;
+    }
+ 
+
+}
+
+@media (max-width: 791px){
+
+    .header__center-time{
+        display: none;
+    }
+
+}
+
+@media (max-width: 468px){
+
+    .header__left{
+        img{
+            width: 100px;
+        }
+    }
+
+    .header__right-phone-link{
+        
+        font-size: 20px;
+
+        img{
+            display: none;
+        }
+
+    }
+
+    .header__right-link{
+        display: none;
+    }
+
+}

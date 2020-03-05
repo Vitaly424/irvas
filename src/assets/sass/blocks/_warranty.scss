@@ -1,0 +1,68 @@
+.warranty{
+  background-image: url('../../assets/img/warranty/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-bottom: 0;
+}
+
+.warranty__title{
+  color: $white;
+
+  &::after{
+    content: "";
+    background-color: $white;
+  }
+}
+
+.warranty__row{
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.warranty__item{
+  flex-basis: 33.33333%;
+
+  margin-bottom: 70px;
+}
+
+.warranty{
+  text-align: center;
+}
+
+.warranty__desk{
+  margin-top: 20px;
+  max-width: 172px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media(max-width: 790px){
+
+  .warranty__row{
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+
+  .warranty__item{
+    flex-basis: 50%;
+
+    margin-bottom: 53px;
+  }
+}
+
+@media(max-width: 473px){
+
+  .warranty__item{
+    flex-basis: 100%;
+  }
+
+}

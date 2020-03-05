@@ -1,0 +1,85 @@
+.balcony{
+    background-color: $blue-4;
+}
+
+.balcony__inner{
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.balcony__tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.balcony__tab{
+    display: block;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+ 
+
+    cursor: pointer;
+
+    text-align: center;
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: background-image .2s linear;
+
+    &:hover{
+        background-image: linear-gradient(to bottom, $blue-three  0%, rgba($blue-three, .1) 1%, rgba($white, 0) 100%);
+        border-top: 10px solid $blue-three;
+
+        
+        position: relative;
+        
+        &::before{
+            content: "";
+            position: absolute; 
+            left: 20px;
+            bottom: -20px; 
+            top: 0px;
+            left: 50%;
+    
+            transform: translateX(-50%);
+    
+            border: 10px solid transparent;
+            border-top: 10px solid  $blue-three;
+        }
+    }
+}
+
+.balcony__tab.active{
+   
+    border-top: 10px solid $blue-three;
+    background-image: linear-gradient(to bottom, $blue-three  0%, rgba($blue-three, .1) 1%, rgba($white, 0) 100%);
+ 
+     
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute; 
+        left: 20px;
+        bottom: -20px; 
+        top: 0px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        border: 10px solid transparent;
+        border-top: 10px solid  $blue-three;
+    }
+}
+
+
+ 
+ 

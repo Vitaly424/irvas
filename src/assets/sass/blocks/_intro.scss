@@ -1,0 +1,153 @@
+.intro{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: url("../../assets/img/intro/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intro__suptitle{
+    color: $gray;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.846;
+}
+
+.intro__title{
+    margin-top: 30px;
+
+    color: $gray;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.intro__benefits{
+    margin-top: 200px;
+
+    display: flex;
+    align-items: center;;
+}
+
+.intro__benefits-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+
+    border: 1px solid $white;
+    background-color: $blue;
+    border-radius: 50%;
+
+    text-align: center;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    span{
+        color: $white;
+        font-family: $Open-sans-condensed;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    img{
+        display: block;
+        width: 40px;
+        height: 40px;
+
+        position: absolute;
+        top: -16px;
+    }
+}
+
+.intro__btn {
+    width: 100%;
+}
+
+
+@media (max-width: 1094px){
+
+    .intro{
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+
+    .intro__inner{
+        justify-content: center;
+    }
+
+    .intro__content{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .intro__title{
+        margin-top: 7px;
+    }
+
+    .intro__benefits{
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+      
+    }
+}
+
+ 
+@media (max-width: 566px){
+
+    .intro__title{
+        font-size: 44px;
+    }
+
+    .intro__suptitle{
+        font-size: 19px;
+    }
+
+    .intro__content{
+        margin-bottom: 30px;
+
+    }
+
+    .intro__benefits{
+        display: none;
+    }
+
+  
+  
+}
+
+ 
+
+@media (max-width: 455px){
+    .intro__title{
+        margin-top: 0;
+
+        font-size: 32px;
+    }
+
+    .intro__suptitle{
+        font-size: 16px;
+    }
+}
+ 
+ 

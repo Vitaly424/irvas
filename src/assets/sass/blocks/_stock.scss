@@ -1,0 +1,53 @@
+.stock{
+  background-image: url("../../assets/img/stock/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.stock__inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stock__title{
+  color: $blue-four;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stock__subtitle{
+  margin-top: 80px;
+  max-width: 400px;
+
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1006px){
+
+  .stock{
+    background-image: none;
+    background-color: #dbf54d;
+  }
+  .stock__left{
+    width: 100%;
+    text-align: center;
+  }
+
+  .stock__subtitle{
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .stock__inner{
+    justify-content: center;
+  }
+
+  .stock__form{
+    margin-top: 20px;
+  }
+
+}
